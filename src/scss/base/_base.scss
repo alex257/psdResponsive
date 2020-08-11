@@ -1,0 +1,53 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**,
+*:before,
+*:after {
+  box-sizing: border-box;
+}*/
+  
+  body {
+    background-color: $pink;
+    overflow-y: visible;
+    overflow-x: hidden;
+  }
+  .main-wrapper {
+    margin: 0 auto;
+  }
+  
+  .container-full {
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+  } 

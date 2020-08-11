@@ -1,0 +1,16 @@
+@mixin grid($size, $breakpoint) {
+  @media (min-width: $breakpoint) {
+    @for $i from 1 through $columns {
+      .col-#{$size}-#{$i} {
+        flex: 0 0 (100% / $columns) * $i;
+      }
+      .col-#{$size}-offset-#{$i} {
+        margin-left: (100% / $columns) * $i;
+      }
+    }
+  }
+}
+@include grid("xs", $xs);
+@include grid("sm", $sm);
+@include grid("md", $md);
+@include grid("lg", $lg);
