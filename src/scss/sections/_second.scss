@@ -1,0 +1,56 @@
+.second {
+  font-size: 0.8rem;
+  height: 7.6rem;
+  display: flex;
+  flex: 1 1 100%;
+
+
+  &__heading-wrapper{
+    padding-left: 5%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+
+  &__icon-wrapper{
+    display: flex;
+    //flex: 1 1 100%;
+  }
+
+  @include mQ($sm) {
+    height: 15rem;
+    font-size: 1.4rem;
+  }
+
+  @include mQ($md) {
+    height: 23.3rem;
+    font-size: 1.8rem;
+  }
+
+  @include mQ($lg) {
+    height: 24.4rem;
+    font-size: 2.3rem;
+  }
+
+  &__heading {
+    color: $second-text-color;
+    margin-top: 0;
+    
+    
+
+    @include mQ($xs) {
+      font-size: 0.8rem;
+    }
+    @include mQ($sm) {
+      font-size: 1.4rem;
+    }
+
+    @include mQ($md) {
+      font-size: 1.8rem;
+    }
+
+    @include mQ($lg) {
+      font-size: 2.3rem;
+    }
+  }
+}

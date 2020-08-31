@@ -16,18 +16,24 @@ html {
 }*/
   
   body {
-    background-color: $pink;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
     overflow-y: visible;
     overflow-x: hidden;
+    display: flex;
   }
   .main-wrapper {
-    margin: 0 auto;
+    //margin: 0 auto;
+    //background-color: firebrick;
   }
   
   .container-full {
     width: 100%;
   }
-
+  
+  .container {
+    margin-left: 5%;
+  }
   .row {
     display: flex;
   }
@@ -51,3 +57,21 @@ html {
     display: block;
     height: auto;
   } 
+
+  .icon {
+    //padding: 4px 0 40px 0px;
+    font-size: 1.3rem;
+  
+    @include mQ($sm) {
+      font-size: 2.3rem;
+      font-weight: 400;
+    }
+  
+    @include mQ($md) {
+      font-size: 2.6rem;
+    }
+  
+    @include mQ($lg) {
+      font-size: 3.2rem;
+    }
+  }

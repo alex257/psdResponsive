@@ -1,0 +1,103 @@
+.about{
+    background-color: $about-bg;
+    margin-top: -3.2rem;
+  
+    @include mQ($sm) {
+      margin-top: -4.5rem;
+    }
+  
+    @include mQ($md) {
+      margin-top: -5rem;
+    }
+  
+    @include mQ($lg) {
+      margin-top: -2rem;
+    }
+  
+    &__heading {
+      color: $about-h-color;
+      padding: 7.1rem 0 3.1rem 3.6rem;
+      //padding-top: 7.1rem;
+      //padding-bottom: 3.1rem;
+      font-size: 1.5rem;
+      font-weight: 300;
+  
+      @include mQ($sm) {
+        font-size: 2.8rem;
+        padding: 13.4rem 0 4.6rem 7.8rem;
+      }
+  
+      @include mQ($md) {
+        font-size: 2.8rem;
+        padding: 7.1rem 0 3.1rem 7.7rem;
+      }
+  
+      @include mQ($lg) {
+        font-size: 2.8rem;
+        padding: 5.5rem 0 3.2rem 8rem;
+      }
+    }
+  
+    &__heading--second {
+      @include mQ($sm) {
+        display: none;
+      }
+    }
+  
+    p {
+      color: $about-p-color;
+      padding: 0 3.8rem 0 3.6rem;
+      letter-spacing: 1.1px;
+  
+      @include mQ($sm) {
+        font-size: 1.8rem;
+        letter-spacing: 1.5px;
+        line-height: 1.8;
+        padding: 0 7.5rem 0 7.8rem;
+      }
+  
+      @include mQ($md) {
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: 0 8rem 0 7.7rem;
+        text-align: left;
+      }
+  
+      @include mQ($lg) {
+        padding: 0 3.6rem 0 8rem;
+      }
+    }
+  
+    &__text-wrapper {
+      @include mQ($md) {
+        column-count: 2;
+        column-gap: 2px;
+        padding-bottom: 12rem;
+        display: flex;
+        //justify-content: space-around;
+      }
+  
+      &__paragraph--second-row {
+        padding-left: 0;
+      }
+    }
+  
+    &__picture {
+      background: url("../img/img2.jpg");
+      background-position: bottom;
+      background-size: cover;
+      width: 100%;
+      height: 7.5rem;
+      margin-top: 4.8rem;
+      margin-bottom: -5.3rem;
+  
+      @include mQ($sm) {
+        height: 15rem;
+        margin-top: 10rem;
+        margin-bottom: 7.1em;
+      }
+      @include mQ($md) {
+          display: none;
+        }
+    }
+  }
